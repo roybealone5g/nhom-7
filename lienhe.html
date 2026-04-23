@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên Hệ - 20-11-2026</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.contact-page h1{
+    margin-bottom:10px;
+}
+
+.contact-page p{
+    margin-bottom:25px;
+}
+
+/* ===== VIDEO GRID ===== */
+.video-box{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+}
+
+/* ITEM */
+.video-item{
+    text-decoration:none;
+    color:black;
+}
+
+/* VIDEO PREVIEW */
+.video-item video{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:12px;
+    background:#000;
+    transition:0.3s;
+}
+
+/* TITLE */
+.video-item p{
+    text-align:center;
+    margin-top:8px;
+    font-weight:bold;
+}
+
+/* HOVER */
+.video-item:hover video{
+    transform:scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width:768px){
+    .video-box{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- ===== ACTION BAR ===== -->
+<div class="action-bar">
+    <div class="logo">🌸 20-11-2026</div>
+
+    <div class="menu">
+        <a href="index.html">Trang chủ</a>
+        <a href="anh.html">Ảnh</a>
+        <a href="tho.html">Thơ</a>
+        <a class="active" href="lienhe.html">video</a>
+    </div>
+</div>
+
+<!-- ===== MAIN ===== -->
+<div class="main">
+<div class="container contact-page">
+
+    <h1>Video kỷ niệm</h1>
+    <p>Những khoảnh khắc đáng nhớ của 12A5 ❤️</p>
+<div class="video-box">
+
+    <div class="video-item">
+        <video controls src="video/12.mp4"></video>
+        <p>múa 11a8</p>
+    </div>
+
+    <div class="video-item">
+        <video controls src="video/2.mp4"></video>
+        <p>múa 12a5</p>
+    </div>
+
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-bar">
+<div class="footer-content">
+
+<div class="footer-box">
+<h3>📞 Liên hệ</h3>
+<p><img src="icons/facebook.png" class="icon"> fb.com/kỳ quân</p>
+<p><img src="icons/zalo.png" class="icon"> 0945 927 855</p>
+<p>Email: roybealone5g@gmail.com</p>
+</div>
+
+<div class="footer-box">
+<h3>🎓 Thực hiện bởi</h3>
+<p>Nguyễn Thế Kỳ Quân</p>
+<p>Lớp 12A5</p>
+<p>Trường THPT Krông Bông</p>
+</div>
+
+<div class="footer-box">
+<h3>🌸 20-11-2026</h3>
+<p>Chúc thầy cô sức khỏe</p>
+<p>Happy Teachers' Day ❤️</p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 - Website 20/11 | Made by 12A5
+</div>
+</footer>
+
+</body>
+</html>
